@@ -78,7 +78,9 @@ body {
 .list {
     list-style: none;
 }
-
+.img {
+    display: block;
+}
 .site-nav .link {
     color: var(--navy-blue-color);
     text-decoration: none;
@@ -131,11 +133,28 @@ body {
     letter-spacing: 0.02em;
 }
 .hero {
-    background-color: var(--navy-blue-color);
+    opacity: 0.7;
     text-align: center;
     padding-top: 192px;
     padding-bottom: 192px;
+    height: 603px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),
+    url(../images/people-office\ 1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--navy-blue-color);
+
 }
+
+
 .hero-title {
     color: var(--primary-bg-color);
     background-color: var(--navy-blue-color);
@@ -279,12 +298,12 @@ body {
     margin-left: -24px;
 }
 .cards {
-    
     flex-basis: calc(100%/3 - 48px);
     margin-top: 48px;
     margin-left: 24px;
 }
-.potfolio-images {
+.portfolio-images,
+.studio-images {
     display: block;
 }
 .cards-img .title {
