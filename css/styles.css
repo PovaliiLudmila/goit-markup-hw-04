@@ -16,9 +16,6 @@ ul {
     margin-top: 0;
     padding-left: 0;
 }
-img {
-    display: block;
-}
 .botton {
     cursor: pointer;
 }
@@ -37,10 +34,12 @@ body {
 .header-page {
     padding-top: 24px;
     padding-bottom: 24px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .page-header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .nav {
     display: flex;
@@ -49,7 +48,6 @@ body {
 .site-nav {
     display: flex;
     align-items: center;
-    margin-right: 331px; 
 }
 .navigation:not(:last-child) {
     margin-right: 40px;
@@ -59,7 +57,7 @@ body {
 }
 .contact {
     display: flex;
-    align-items: center;
+    margin-left: auto;
 }
 .logo {
     color: var(--navy-blue-color);
@@ -137,7 +135,6 @@ body {
     text-align: center;
     padding-top: 192px;
     padding-bottom: 192px;
-    margin-bottom: 120px;
 }
 .hero-title {
     color: var(--primary-bg-color);
@@ -161,7 +158,6 @@ body {
     padding: 16px 32px;
     min-width: 170px;
     display: inline-block;
-    
     border: 1px solid transparent;
 }
 .button.primary:hover,
@@ -198,7 +194,9 @@ body {
     color: var(--navy-blue-color);
     margin-bottom: 8px;
 }
-
+.section-placeholder {
+    padding-bottom: 120px;
+}
 .section-benefits .title {
     color: var(--navy-blue-color);
     font-weight: 600;
@@ -207,7 +205,8 @@ body {
     letter-spacing: 0.02em;
 }
 .section-benefits {
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -222,9 +221,16 @@ body {
     text-transform: capitalize;
     padding-bottom: 72px;
 }
-.img {
+.card-text-title {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background:var(--primary-bg-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+.placeholder {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
 }
 
 .feature-list {
@@ -235,8 +241,10 @@ body {
 
 .benefits {
     display: flex;
-    flex-wrap: wrap;
     column-gap: 24px;
+}
+.item {
+    flex-basis: calc((100% - 72px) / 4);
 }
 .benefits .title {
     align-items: center;
@@ -267,14 +275,17 @@ body {
 .cards-img {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 120px;
-    padding-top: 72px;
+    margin-top: -48px;
+    margin-left: -24px;
 }
-.cards:not(:nth-child(3n)) {
-    margin-right: 24px;
+.cards {
+    
+    flex-basis: calc(100%/3 - 48px);
+    margin-top: 48px;
+    margin-left: 24px;
 }
-.cards:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 48px;
+.potfolio-images {
+    display: block;
 }
 .cards-img .title {
     color: var(--navy-blue-color);
@@ -289,6 +300,19 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+.section-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+.button-nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+.prim:not(:last-child) {
+    margin-right: 24px;
 }
 .button.prim {
     background-color: var(--color-conflower);
@@ -314,7 +338,14 @@ body {
     letter-spacing: 0.04em;
     border: 1px solid transparent;
 }
-
+.cards-portfolio {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    background:var(--primary-bg-color);
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 
 .footer {
     background-color: var(--navy-blue-color);
@@ -328,6 +359,8 @@ body {
     line-height: 1.16;
     text-decoration: none;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
+    display: block;
 }
 .logo-web-footer {
     color: var(--accent-color);
@@ -336,6 +369,7 @@ body {
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
 }
 .footer-text {
     color: var(--color-conflower);
@@ -343,5 +377,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
 }
     
