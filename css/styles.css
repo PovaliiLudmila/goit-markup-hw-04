@@ -267,17 +267,17 @@ body {
     background-position: center;
     background-color: var(--cloud-color);
 }
-.icon-antenna ::before {
-    background-image: url(../images/antenna\ 1\ \(1\).svg);
+.icon-antenna::before {
+    background-image: url("../images/antenna\ 1\ \(1\).svg");
 }
-.icon-clock ::before{
-    background-image: url(../images/clock\ 1\ \(1\).svg);
+.icon-clock::before{
+    background-image: url("../images/clock\ 1\ \(1\).svg");
 }
-.icon-diagramma ::before{
-    background-image: url(../images/diagram\ 1\ \(1\).svg);
+.icon-diagramma::before{
+    background-image: url("../images/diagram\ 1\ \(1\).svg");
 }
-.icon-astronaut ::before{
-    background-image: url(../images/astronaut\ 1\ \(1\).svg);
+.icon-astronaut::before{
+    background-image: url("../images/astronaut\ 1\ \(1\).svg");
 }
 .benefits .title {
     align-items: center;
