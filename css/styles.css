@@ -258,27 +258,7 @@ body {
 .item {
     flex-basis: calc((100% - 72px) / 4);
 }
-.item::before {
-    content: '';
-    display: block;
-    height: 64px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--cloud-color);
-}
-.icon-antenna::before {
-    background-image: url("../images/antenna\ 1\ \(1\).svg");
-}
-.icon-clock::before{
-    background-image: url("../images/clock\ 1\ \(1\).svg");
-}
-.icon-diagramma::before{
-    background-image: url("../images/diagram\ 1\ \(1\).svg");
-}
-.icon-astronaut::before{
-    background-image: url("../images/astronaut\ 1\ \(1\).svg");
-}
+
 .benefits .title {
     align-items: center;
 }
