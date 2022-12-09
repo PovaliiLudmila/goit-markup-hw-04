@@ -138,26 +138,19 @@ body {
     padding-top: 192px;
     padding-bottom: 192px;
     height: 603px;
-    max-width: 1440px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-        ),
-    url(../images/people-office\ 1.svg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office\ 1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--navy-blue-color);
-
 }
-
 
 .hero-title {
     color: var(--primary-bg-color);
-    background-color: var(--navy-blue-color);
     font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
@@ -264,6 +257,27 @@ body {
 }
 .item {
     flex-basis: calc((100% - 72px) / 4);
+}
+.item::before {
+    content: '';
+    display: block;
+    height: 64px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--cloud-color);
+}
+.icon-antenna ::before {
+    background-image: url(../images/antenna\ 1\ \(1\).svg);
+}
+.icon-clock ::before{
+    background-image: url(../images/clock\ 1\ \(1\).svg);
+}
+.icon-diagramma ::before{
+    background-image: url(../images/diagram\ 1\ \(1\).svg);
+}
+.icon-astronaut ::before{
+    background-image: url(../images/astronaut\ 1\ \(1\).svg);
 }
 .benefits .title {
     align-items: center;
