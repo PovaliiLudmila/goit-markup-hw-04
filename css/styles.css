@@ -274,6 +274,17 @@ body {
 .feature-list .title {
     text-align: center;
 }
+.item-icon-benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background: var(--cloud-color);
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
 .benefits .text,
 .feature-list .text {
     color: var(--primary-text-color);
@@ -298,6 +309,9 @@ body {
     display: flex;
     justify-content:center;
     gap: 24px;
+}
+.social-list-icon {
+    fill: var(--cloud-color);
 }
 .text-card {
     font-weight: 400;
@@ -415,4 +429,50 @@ body {
     letter-spacing: 0.02em;
     width: 264px;
 }
+.footer-position {
+    display: flex;
+    align-items: baseline;
     
+}   
+.social-media {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-bg-color);
+    margin-bottom: 16px;
+
+}
+.footer-media {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+.footer-list-icon {
+    fill: var(--cloud-color);
+}
+.footer-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFFFFF1A;
+}
+.footer-list-icon:hover,
+.footer-list-icon:focus {
+    fill: var(--cloud-color);
+}
+.footer-list-link:hover,
+.footer-list-link:focus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #31D0AA;
+}
