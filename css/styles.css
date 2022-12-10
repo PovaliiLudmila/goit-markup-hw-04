@@ -285,6 +285,29 @@ body {
 .feature-list .text {
     text-align: center;
 }
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+.social-list {
+    display: flex;
+    justify-content:center;
+    gap: 24px;
+}
+.text-card {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    margin-bottom: 12px;
+}
 .cards-img {
     display: flex;
     flex-wrap: wrap;
